@@ -1,0 +1,192 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(to right, #4a90e2, #00509e);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* To-Do List Box */
+.todo-box {
+    max-width: 500px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+h4 {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    text-align: center;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #00509e;
+    color: #fff;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.table td button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Check Button */
+.table td .btn-success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.table td .btn-success:hover {
+    background-color: #27ae60;
+    transform: scale(1.05); /* Slight scaling effect for hover */
+}
+
+/* Delete Button */
+.table td .btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.table td .btn-danger:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); /* Slight scaling effect for hover */
+}
+
+/* Done Styling */
+.done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Add Task Input */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.input-group button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #357ab7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .todo-box {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .table th, .table td {
+        font-size: 12px;
+    }
+
+    .input-group input, .input-group button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Grade Box (for another section) */
+.grade-box {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.grade-box h4 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.grade-box .table th, .grade-box .table td {
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.grade-box .table input {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.grade-box .btn-primary {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.grade-box .result h5 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.grade-box .result h5 span {
+    color: #FFD700;
+}
+
+/* Lottery Section */
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+#lotteryResult {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
